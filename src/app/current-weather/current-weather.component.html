@@ -1,0 +1,51 @@
+
+<div class="container">
+  <mat-card class="current-weather-item">
+    <mat-card-subtitle>Pressure</mat-card-subtitle>
+    <mat-card-title>
+      {{currentWeater?.pressure}} <span>mmHg</span>
+    </mat-card-title>
+  </mat-card>
+  <mat-card class="current-weather-item">
+    <mat-card-subtitle>Humidity</mat-card-subtitle>
+    <mat-card-title>
+      {{currentWeater?.humidity}} <span>%</span>
+    </mat-card-title>
+  </mat-card>
+  <mat-card class="current-weather-item">
+    <mat-card-subtitle>Sunrise & Sunset</mat-card-subtitle>
+    <mat-card-title>
+      {{currentWeater?.sunrise}}
+    </mat-card-title>
+    <mat-card-title>
+      {{currentWeater?.sunset}}
+    </mat-card-title>
+  </mat-card>
+  <mat-card class="current-weather-item">
+    <mat-card-subtitle>Wind status</mat-card-subtitle>
+    <mat-card-title>
+      {{currentWeater?.windSpeed}} <span>km/h</span>
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{currentWeater?.windDirection}}
+    </mat-card-subtitle>
+  </mat-card>
+  <mat-card class="current-weather-item">
+    <mat-card-subtitle>Min & Max temp</mat-card-subtitle>
+    <mat-card-title>
+      {{currentWeater?.min_temp + " °C"}}
+    </mat-card-title>
+    <mat-card-title>
+      {{currentWeater?.max_temp + " °C"}}
+    </mat-card-title>
+  </mat-card>
+  <mat-card class="current-weather-item">
+    <mat-card-subtitle>Clouds</mat-card-subtitle>
+    <mat-card-title>
+      {{currentWeater?.min_temp + " °C"}}
+    </mat-card-title>
+    <mat-card-title>
+      {{currentWeater?.max_temp + " °C"}}
+    </mat-card-title>
+  </mat-card>
+</div>

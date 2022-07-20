@@ -1,0 +1,16 @@
+<div class="c">
+  <app-location-info style="width: 25%" [locationInfo]="weather">
+  </app-location-info>
+  <div class="container">
+    <app-forecast [cityName]="weather?.name">
+    </app-forecast>
+    <app-current-weather [currentWeater]="weather">
+
+    </app-current-weather>
+  </div>
+
+</div>
+
+
+<!--<div>Curr weather: </div>-->
+<!--<div>City: {{currentWeather.city}} </div>-->

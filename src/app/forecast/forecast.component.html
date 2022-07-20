@@ -1,0 +1,7 @@
+<div class="forecast">
+  <app-forecast-item *ngFor="let dayOfFirstWeek of firstWeekForecast.slice(0,7)" [currentDay]="dayOfFirstWeek.currentDay" [date]="dayOfFirstWeek.date"
+                     [temperatureDay]="dayOfFirstWeek.temperatureDay" [temperatureNight]="dayOfFirstWeek.temperatureNight" [iconClassname]="dayOfFirstWeek.iconClassname"
+                     [description]="dayOfFirstWeek.description" >
+  </app-forecast-item>
+</div>
+

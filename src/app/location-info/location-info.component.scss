@@ -1,0 +1,42 @@
+@import '../../../node_modules/weather-icons/css/weather-icons.min.css';
+
+
+.container {
+  height: 100%;
+  background-color: white;
+  padding-top: 20px;
+  //display: flex;
+  //justify-content: center;
+  //flex-direction: column;
+  //display: flex;
+  //flex-wrap: nowrap;
+  //justify-content: center;
+}
+
+.city-select {
+  width: 100%;
+ // margin-top: 20px;
+}
+
+.location-card {
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+.city-card__sky-icon {
+  //width: 40px;
+  //height: 40px;
+ // position: absolute;
+  //top: 2.5em;
+  left: 8%;
+
+  .wi {
+    font-size: 4em;
+  }
+}
+
+.location-card__temp {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}

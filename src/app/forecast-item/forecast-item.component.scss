@@ -1,0 +1,68 @@
+@import '../../../node_modules/weather-icons/css/weather-icons.min.css';
+
+
+.forecast-item {
+
+  width: 100px;
+  &__sky-state {
+
+    text-align: center;
+    .wi {
+      display: inline-block;
+      font-size: 1.8em;
+      padding: .3em 0;
+    }
+  }
+
+  &__date {
+    height: 40px;
+    margin-bottom: 10px;
+
+    mat-card-title {
+      font-size: 17px;
+    }
+  }
+
+  &__temperature {
+    display: block;
+    width: 98%;
+    font-size: .9em;
+    padding: .3em 0 .1em 0;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
+
+
+    &-data {
+      display: inline-block;
+      position: relative;
+
+      &:before,
+      &::after {
+        display: block;
+        position: absolute;
+      }
+
+      &::before {
+        // content: attr(data-deg);
+        top: 0;
+        font-weight: 300;
+        font-size: 90%;
+      }
+
+      &::after {
+        // content: attr(data-unit);
+        bottom: 0;
+      }
+    }
+
+    &--night {
+      background: rgba(0, 0, 0, 0.03);
+    }
+  }
+
+  &__natural-phenomen {
+    padding: .3em 0 .1em 0;
+  }
+}
+

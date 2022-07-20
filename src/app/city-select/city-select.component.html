@@ -1,0 +1,41 @@
+<div class="c">
+  <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Search the city</mat-label>
+      <input class="search-input" type="text"
+             placeholder="Pick one"
+             aria-label="Number"
+             matInput
+             [formControl]="myControl"
+             [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option.cityName" (click)="selectCity(option.cityName)"
+        >
+          {{option.cityName}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <button mat-icon-button color="primary" aria-label="Example icon button with a home icon" routerLink="/">
+      <mat-icon>home</mat-icon>
+    </button>
+  </form>
+
+
+<!--  <mat-form-field>-->
+<!--    <mat-label>Search the city:</mat-label>-->
+<!--    <input matInput class="search" type="text"-->
+<!--           name="name"-->
+<!--           [(ngModel)]="city"-->
+<!--    />-->
+<!--  </mat-form-field>-->
+
+<!--  <button-->
+<!--    class="search-bar__search-btn"-->
+<!--    [ngClass]="{'search-bar__search-btn&#45;&#45;hide': city}"-->
+<!--    (click)="selectCity()"-->
+<!--  >-->
+<!--    <svg viewBox="0 0 24 24" style="display: inline-block; color: rgba(0, 0, 0, 0.87); fill: rgb(158, 158, 158); height: 24px; width: 24px; user-select: none; transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1); opacity: 1;">-->
+<!--      <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>-->
+<!--    </svg>-->
+<!--  </button>-->
+</div>

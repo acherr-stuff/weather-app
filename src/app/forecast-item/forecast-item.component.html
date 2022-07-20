@@ -1,0 +1,22 @@
+<mat-card class="forecast-item">
+  <mat-card-header class="forecast-item__date" *ngIf="currentDay">
+    <mat-card-title>Today</mat-card-title>
+  </mat-card-header>
+  <mat-card-header class="forecast-item__date" *ngIf="!currentDay">
+    <mat-card-title>{{date | date: 'EEE dd MMM'}}</mat-card-title>
+  </mat-card-header>
+  <div class="forecast-item__sky-state">
+    <span [attr.class]="iconClassname"></span>
+  </div>
+  <mat-card-subtitle class="forecast-item__temperature forecast-item__temperature--day">
+    <span class="forecast-item__temperature-data" data-deg="°" [attr.data-unit]="measureOfTemp">
+      {{temperatureDay + " °C"}}
+    </span>
+  </mat-card-subtitle>
+  <mat-card-subtitle class="forecast-item__temperature forecast-item__temperature--night">
+    <span class="forecast-item__temperature-data" data-deg="°" [attr.data-unit]="measureOfTemp">
+      {{temperatureNight + " °C"}}
+    </span>
+  </mat-card-subtitle>
+  <mat-card-subtitle class="forecast-item__natural-phenomen">{{description}}</mat-card-subtitle>
+</mat-card >

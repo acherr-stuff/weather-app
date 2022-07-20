@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-form-field-label {
+  color: darkgray;
+
+}
+
+.mat-input-element {
+  color: #646464;
+}
+
+.mat-form-field-outline {
+  background-color: rgba(193,191,191,0.3);
+ // opacity: 0.2;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  opacity: 1 !important;
+  color: #c1bfbf
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: darkgray;
+  opacity: 1;
+
+  .mat-form-field-outline-thick {
+    opacity: 1;
+
+  }
+
+}
+/* Font color */
+input.mat-input-element {
+  color: darkgray;
+}

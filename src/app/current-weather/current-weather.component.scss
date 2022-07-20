@@ -1,0 +1,15 @@
+.current-weather-item {
+  width: 100px;
+
+  mat-card-title {
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}

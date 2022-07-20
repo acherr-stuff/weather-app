@@ -1,0 +1,17 @@
+<div class="container">
+  <app-city-select class="city-select"></app-city-select>
+<!--  <p>location-info works!</p>-->
+  <div class="location-card">
+    <div class="city-card__sky-icon">
+      <span [attr.class]="locationInfo?.iconClassname"></span>
+    </div>
+    <div class="location-card__temp">
+      {{locationInfo?.temp}} °C
+    </div>
+    <h1> {{locationInfo?.name}}  , {{locationInfo?.country}} </h1>
+    <div class="city-card__time">
+      {{ days[currentDay?.getDay()] + ", " + currentDay?.getHours() + ":" + ((currentDay?.getMinutes() < 10) ? "0" + currentDay?.getMinutes() : currentDay?.getMinutes())}}
+    </div>
+  </div>
+</div>
+
